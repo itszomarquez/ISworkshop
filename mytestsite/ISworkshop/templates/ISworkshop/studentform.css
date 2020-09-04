@@ -1,0 +1,26 @@
+html,
+body {
+  height: 100%;
+}
+
+h1{
+  font-weight:bolder;
+  text-align:center;
+  color: #FFFFFF;
+}
+
+.title{
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #000000;
+  position: inherit;
+}
+
+.content {
+  background-color: #D5D5D5;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+}

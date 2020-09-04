@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block title %}<title>Local Library</title>{% endblock %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="profile.html">
+  <!-- Add additional CSS in static file -->
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#FFD300;">
+  <a class="navbar-brand" href="#">CAPES Portal</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="profile.html">Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Companies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Opportunities</a>
+      </li>
+    </ul>
+      <a class="nav-link" href="index.html" style="color:#000000;">Sign up</a>
+  </div>
+</nav>
+  {% for post in posts %}
+
+  				<li class="list-group-item">Email: {{post.email}}</li>
+          <li class="list-group-item">Graduation Year: {{post.graduation_year}}</li>
+          <li class="list-group-item">Date joined: {{post.date_joined}}</li>
+          <li class="list-group-item">Degree: {{post.degree}}</li>
+          <li class="list-group-item">Program: {{post.program}}</li>
+          <li class="list-group-item">Student Number: {{post.student_number}}</li>
+          <li class="list-group-item">Last login: {{post.last_login}}</li>
+
+  {% endfor %}
+</body>
+</html>

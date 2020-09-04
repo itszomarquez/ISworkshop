@@ -1,0 +1,48 @@
+html,
+body {
+  height: 100%;
+  background-image: url("CAPES_Logo_2_png");
+}
+
+.display-4{
+  font-weight:bolder;
+  text-align:center;
+  color: #FFFFFF;
+}
+
+h2{
+  font-size: 25px;
+}
+
+h3{
+  font-size:20px
+}
+
+.title{
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #000000;
+  position: inherit;
+}
+
+.content {
+  background-color: #D5D5D5;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.container {
+  border-style: solid;
+  border-collapse: separate;
+  border-color: #FFD300;
+  border-radius: 20px;
+  height:550px;
+  margin-top:50px;
+  width:800px;
+  margin-bottom:100px;
+}
+img{
+  align-self: center;
+}
